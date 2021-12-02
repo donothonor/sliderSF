@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+}
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a {
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:visited {
+    color: none;
+}
+h1,h2 {
+    color:yellow;
+}
+.slider {
+    position: relative;
+    color: white;
+    width: 1440px;
+    background: black;
+    margin: 0 auto;
+}
+.slider-content {
+    display: flex;
+    justify-content: space-between;
+}
+.container {
+    margin: 0 auto;
+    width: 1300px;
+}
+.navigation {
+    position: absolute;
+    top: 107px;
+    right: 125px;
+    width: 623px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navigation-item:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+.text-content {
+    margin-top: 176px;
+    margin-bottom: 124px;
+}
+.header {
+    text-transform: uppercase;
+    color:yellow;
+    margin-bottom: 34px;
+}
+.discription {
+    margin-bottom: 42px;
+}
+.grid-wrapper {
+    margin-bottom: 85px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.grid-item {
+    margin-bottom: 35px;
+}
+.grid-item h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.arrow {
+    cursor: pointer;
+    width: 40px;
+    height: 1.5px;
+    background: white;
+}
+.l-arrow {
+    position: relative;
+}
+.l-arrow::before {
+    content: '';
+    width: 7px;
+    height: 13px;
+    background-image: url(./img/Vector\ \(Stroke\)\ \(3\).svg);
+    position: absolute;
+    top: -5.75px;
+    left: 0;
+}
+.dots {
+    display: flex;
+    justify-content: space-between;
+    width: 62px;
+}
+.dot{
+    cursor: pointer;
+    width: 9.5px;
+    height: 9.5px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+.dot:hover {
+    background: white;
+}
+.r-arrow {
+    position: relative;
+}
+.r-arrow::before {
+    content: '';
+    width: 7px;
+    height: 13px;
+    background-image: url(./img/Vector\ \(Stroke\)\ \(3\).svg);
+    position: absolute;
+    top: -5.75px;
+    right: 0;
+    transform: rotate(180deg);
+}
+.image  {
+    background: url(./img/image\ 2.png);
+    width: 680px;
+    height: 480px;
+    margin-top: 176px;
+}
