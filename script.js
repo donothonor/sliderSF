@@ -11,13 +11,11 @@ const pictures = ["https://i.postimg.cc/pTD9hMrR/image-2.png",
 navi.forEach((naviItem, naviIndex) => {
     naviItem.addEventListener('click', e => {
         e.preventDefault()
-        defaultCondition()
         moveSlide(naviIndex)
     })
 })
 dots.forEach((dotItem, dotIndex) => {
     dotItem.addEventListener('click', () => {
-        defaultCondition()
         moveSlide(dotIndex)
     })
 })
@@ -31,7 +29,6 @@ prev.addEventListener('click', () => {
     } else {
         currentIndex--
     }
-    defaultCondition()
     moveSlide(currentIndex)
 })
 next.addEventListener('click', () => {
@@ -40,20 +37,17 @@ next.addEventListener('click', () => {
     } else {
         currentIndex++
     }
-    defaultCondition()
     moveSlide(currentIndex)
 })
 
 function moveSlide (index) {
+    defaultCondition()
     image.style.backgroundImage = `url(${pictures[index]})`
     navi[index].classList.add('active-link')
     dots[index].style.backgroundColor = 'white'
     currentIndex = index
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    moveSlide(0)
-})
 function defaultCondition () {
     navi.forEach(nav => {
         nav.classList.remove('active-link')
@@ -62,5 +56,9 @@ function defaultCondition () {
         dot.style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
     })
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    moveSlide(0)
+})
 
 
