@@ -44,6 +44,10 @@ h1,h2 {
     text-decoration: underline;
     color: yellow;
 }
+.navigation-item:active {
+    text-decoration: underline;
+    color: yellow;
+}
 
 .text-content {
     margin-top: 176px;
@@ -89,7 +93,7 @@ h1,h2 {
     content: '';
     width: 7px;
     height: 13px;
-    background-image: url(./img/Vector\ \(Stroke\)\ \(3\).svg);
+    background-image: url(./img/Vector\(Stroke\)\(3\).svg);
     position: absolute;
     top: -5.75px;
     left: 0;
@@ -116,7 +120,7 @@ h1,h2 {
     content: '';
     width: 7px;
     height: 13px;
-    background-image: url(./img/Vector\ \(Stroke\)\ \(3\).svg);
+    background-image: url(./img/Vector\(Stroke\)\(3\).svg);
     position: absolute;
     top: -5.75px;
     right: 0;
@@ -127,4 +131,8 @@ h1,h2 {
     width: 680px;
     height: 480px;
     margin-top: 176px;
+}
+.active-link {
+    text-decoration: underline;
+    color: yellow;
 }
